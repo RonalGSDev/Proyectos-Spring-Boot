@@ -1,6 +1,6 @@
-# CRUD
+# EJERCICIO DE UN CRUD
 
 ### Tabla Productos
 
->[!NOTE]
+>[!NOTE] CREATE
 >Guardar a un cliente.
