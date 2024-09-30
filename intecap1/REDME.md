@@ -5,6 +5,11 @@
 >[!NOTE]
 >Guardar a un producto.
 
+````
+http://localhost:8080/productos/guardar
+````
+
+
 
 >[!NOTE]
 >Guardar a un producto.
