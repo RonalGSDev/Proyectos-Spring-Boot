@@ -2,5 +2,5 @@
 
 ### Tabla Productos
 
->[!NOTE] CREATE
->Guardar a un cliente.
+>[!NOTE]
+>CREATE --> Guardar a un cliente.
