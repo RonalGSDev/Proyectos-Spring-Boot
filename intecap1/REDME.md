@@ -1,4 +1,4 @@
-# EJERCICIO DE UN CRUD
+# EJERCICIO CRUD CON SPRING BOOT
 
 ## Tabla Productos
 
@@ -10,7 +10,7 @@ http://localhost:8080/productos/listar
 [![image.png](https://i.postimg.cc/KjQqz6jJ/image.png)](https://postimg.cc/5QYqKkwC)
 
 
-### Guardar a un producto.
+### Guardar un producto.
 
 ````
 http://localhost:8080/productos/guardar
@@ -18,7 +18,7 @@ http://localhost:8080/productos/guardar
 [![image.png](https://i.postimg.cc/SND3NMzk/image.png)](https://postimg.cc/D84BxmgM)
 
 
-### Editar a un producto.
+### Editar un producto.
 
 ````
 http://localhost:8080/productos/editar/10
@@ -26,7 +26,7 @@ http://localhost:8080/productos/editar/10
 [![image.png](https://i.postimg.cc/bYKH0Nck/image.png)](https://postimg.cc/yWyZsKN8)
 
 
-### Eliminar a un producto.
+### Eliminar un producto.
 
 ````
 http://localhost:8080/productos/eliminar/10
