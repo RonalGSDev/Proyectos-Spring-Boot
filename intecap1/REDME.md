@@ -2,5 +2,5 @@
 
 ### Tabla Productos
 
->[!CREATE]
+>[!NOTE]
 >Guardar a un producto.
