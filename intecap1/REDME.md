@@ -23,7 +23,7 @@ http://localhost:8080/productos/guardar
 ````
 http://localhost:8080/productos/editar/10
 ````
-[![image.png](https://i.postimg.cc/SNJ7C2vy/image.png)](https://postimg.cc/YhBWw97V)
+[![image.png](https://i.postimg.cc/bYKH0Nck/image.png)](https://postimg.cc/yWyZsKN8)
 
 
 ### Eliminar a un producto.
