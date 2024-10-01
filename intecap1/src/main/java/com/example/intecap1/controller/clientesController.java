@@ -56,10 +56,9 @@ public class clientesController {
         }
     }
 
-    @PutMapping("/editar/{idCliente}")
-    public ResponseEntity<String> updateCliente(@PathVariable int idCliente, @RequestBody clientesModel entities) {
+    @PutMapping("/editar")
+    public ResponseEntity<String> updateCliente(@RequestBody clientesModel entities) {
         try {
-            entities.setId(idCliente);
             this.clientesService.save(entities);
             return ResponseEntity.ok("Cliente editado correctamente");
         } catch (Exception e) {

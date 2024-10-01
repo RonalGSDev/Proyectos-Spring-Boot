@@ -52,10 +52,9 @@ public class productosController {
         
     }
 
-    @PutMapping("editar/{idProducto}")
-    public ResponseEntity<String> updateProductos(@PathVariable int idProducto, @RequestBody productosModel entities) {
+    @PutMapping("/editar")
+    public ResponseEntity<String> updateProductos(@RequestBody productosModel entities) {
         try {
-            entities.setId(idProducto);
             this.productosService.save(entities);
             return ResponseEntity.ok("Producto editado correctamente");
         } catch (Exception e) {
