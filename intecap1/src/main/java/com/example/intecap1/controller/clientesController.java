@@ -55,7 +55,7 @@ public class clientesController {
             return ResponseEntity.badRequest().body("Error en el servidor");
         }
     }
-
+    
     @PutMapping("/editar")
     public ResponseEntity<String> updateCliente(@RequestBody clientesModel entities) {
         try {
