@@ -24,6 +24,7 @@ http://localhost:8080/productos/guardar
   "stock": 10
 }
 
+
 ````
 ![image](https://github.com/user-attachments/assets/f3af0e28-8bef-46b0-b1f1-d31d4315151c)
 
@@ -32,16 +33,20 @@ http://localhost:8080/productos/guardar
 
 ````
 
-http://localhost:8080/productos/editar/10
+http://localhost:8080/productos/editar
 
 
 {
-  "nombre": "Pantalon de Lana",
-  "precio": 200.50,
+  "id": 11,
+  "nombre": "Tenis para correr",
+  "precio": 400.50,
   "stock": 20
 }
+
+
 ````
-![image](https://github.com/user-attachments/assets/8da55a61-3312-4e2b-8991-a245c4492d8c)
+![image](https://github.com/user-attachments/assets/a5fc786e-c53a-4feb-9012-0537f3a867c2)
+
 
 
 
