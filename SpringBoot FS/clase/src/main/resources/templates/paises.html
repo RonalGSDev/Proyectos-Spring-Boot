@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<form>
+  <label for="pais">Seleccione un país</label>
+  <select id="pais" name="pais">
+    <option value="" selected disabled>Seleccione país</option>
+    <option th:each="paisEntrada : ${paises}"
+            th:value="${paisEntrada.code}"
+            th:text="${paisEntrada.name}">País</option>
+  </select>
+</form>
+</body>
+</html>
