@@ -18,39 +18,39 @@ public class TareasController {
     @GetMapping
     public String listarTareas(Model model) {
         model.addAttribute("tareas", tareas);
-        return "listarTareas"; // nombre de la vista para listar tareas
+        return "listarTareas"; 
     }
 
     @GetMapping("/nuevo")
     public String mostrarFormularioTarea(Model model) {
         model.addAttribute("tarea", new TareasModel());
-        return "formulario"; // nombre de la vista para el formulario
+        return "formulario"; 
     }
 
     @PostMapping
     public String crearTarea(@ModelAttribute TareasModel tarea, Model model) {
-        // Validaciones
+       
         if (tarea.getCode() == null || tarea.getCode().isEmpty()) {
             model.addAttribute("error", "El código es obligatorio.");
-            return "formulario"; // Redirigir al formulario con mensaje de error
+            return "formulario"; 
         }
         if (tarea.getTitulo() == null || tarea.getTitulo().isEmpty()) {
             model.addAttribute("error", "El título es obligatorio.");
-            return "formulario"; // Redirigir al formulario con mensaje de error
+            return "formulario"; 
         }
         if (tarea.getDescripcion() == null || tarea.getDescripcion().isEmpty()) {
             model.addAttribute("error", "La descripción es obligatoria.");
-            return "formulario"; // Redirigir al formulario con mensaje de error
+            return "formulario"; 
         }
 
-        // Agregar tarea a la lista
+        
         tareas.add(tarea);
-        return "redirect:/tareas"; // Redirigir a la lista de tareas
+        return "redirect:/tareas"; 
     }
 
     @GetMapping("/eliminar/{code}")
     public String eliminarTarea(@PathVariable String code) {
         tareas.removeIf(tarea -> tarea.getCode().equals(code));
-        return "redirect:/tareas"; // Redirigir a la lista de tareas
+        return "redirect:/tareas"; 
     }
 }

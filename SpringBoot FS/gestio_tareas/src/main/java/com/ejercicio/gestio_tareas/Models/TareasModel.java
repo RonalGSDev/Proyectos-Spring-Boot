@@ -1,9 +1,9 @@
 package com.ejercicio.gestio_tareas.Models;
 
 public class TareasModel {
-    private String code; // Código de la tarea
-    private String titulo; // Título de la tarea
-    private String descripcion; // Descripción de la tarea
+    private String code; 
+    private String titulo; 
+    private String descripcion; 
 
     // Constructor
     public TareasModel() {}
@@ -14,7 +14,6 @@ public class TareasModel {
         this.descripcion = descripcion;
     }
 
-    // Getters y Setters
     public String getCode() {
         return code;
     }
